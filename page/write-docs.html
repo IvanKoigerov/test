@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width" />
+      <title>Нордавинд - ваши заявления</title>
+      <link href="../dist/css/style.min.css" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+      <link rel="icon" href="../img/site-icon.png" />
+   </head>
+   <body>
+      <!-- / Header  -->
+
+      <header class="header">
+         <div class="header-logo">
+            <img src="../img/ENG_logo_Nordavind__svg_.svg" alt="logo" />
+         </div>
+         <nav class="header-nav_mob header-nav">
+            <button class="header-nav-button" type="button" aria-expanded="false" aria-controls="header-nav-list">
+               <svg class="header-nav-button-icon" aria-hidden="true">
+                  <use class="header-icon_menu" href="../img/sprite.svg#menu"></use>
+                  <use class="header-icon_cross" href="../img/sprite.svg#cross"></use>
+               </svg>
+            </button>
+
+            <ul class="header-nav-list list_close_anim" id="header-nav-list">
+               <li class="header-nav-item">
+                  <a class="header-nav-link" href="./view-docs.html"> Мои заявления </a>
+               </li>
+               <li class="header-nav-item">
+                  <a class="header-nav-link active">Создать заявление</a>
+               </li>
+               <li class="header-nav-item">
+                  <a href="./officer-docs.html" class="header-nav-link">Согласованные документы</a>
+               </li>
+               <li class="header-nav-item">
+                  <a class="header-nav-link" href="./abmin-worker.html">Сотрудники</a>
+               </li>
+               <li class="header-nav-item">
+                  <a href="../index.html" class="header-nav-link">Выход</a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+
+      <!-- / Header  -->
+
+      <!--   Main   -->
+
+      <main class="main">
+         <div class="box section-inner2">
+            <form action="" class="form">
+               <h2>
+                  Создать заявление
+               </h2>
+
+               <div class="form-box"> 
+                  <input class="form-box_input" type="text" id="day" required>
+                  <span class="form-box_highlight"></span>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="day">Количество дней</label>
+               </div>
+
+               <div class="form-box"> 
+                  <input class="form-box_date" type="date" name="" id="dateHoliday" min="2022-06-01" required>
+                  <span class="form-box_highlight"></span>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="dateHoliday">Дата начала отпуска</label>
+               </div>
+            
+               <div class="form-box"> 
+                  <input class="form-box_date" type="date" name="" id="dateWork" min="2022-06-01" required>
+                  <span class="form-box_highlight"></span>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="dateWork">Дата отработки (только отгул)</label>
+               </div>
+            
+               <div class="form-box"> 
+                  <input class="form-box_input" type="text" id="place" required>
+                  <span class="form-box_highlight"></span>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="place">Место проведения</label>
+               </div>
+
+               <div class="form-box"> 
+                  <select name="sltype" class="form-box_select" id="select">
+                     <option value="1"> Ежегодный оплачиваемый отпуск </option>
+                     <option value="2"> Отпуск без сохранения заработной платы </option>
+                     <option value="3"> Отгул </option>
+                  </select>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="select">Тип заявления</label>
+               </div>
+
+               <div class="form-box"> 
+                  <input class="button form-button" type="submit">
+               </div>
+            </form>
+         </div>
+      </main>
+
+      <!-- /  Main   -->
+
+      <script src="../dist/js/main.min.js"></script>
+   </body>
+</html>
