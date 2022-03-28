@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width"/>
+	<title>Нордавинд - документооборот</title>
+   <link href="./dist/css/style.min.css" rel="stylesheet" type="text/css" />
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+   <link rel="icon" href="./img/site-icon.png">
+</head>
+<body>
+
+   <!-- / Header  -->
+
+   <header class="header-login">
+      <div class="header-login-logo">
+         <img src="./img/Nordavind_logo_RU.svg" alt="logo">
+      </div>
+   </header>
+
+   <!-- / Header  -->
+
+   
+   <!--   Main   -->
+
+   <main class="main-login">
+      <div class="signin">
+         <form>
+           <div class="form-box">      
+             <input class="form-box_input" id="email" type="text" required>
+             <span class="form-box_highlight"></span>
+             <span class="form-box_bar"></span>
+             <label class="form-box_label" for="email">Почта</label>
+           </div>
+             
+           <div class="form-box">      
+             <input class="form-box_input" type="password" required>
+             <span class="form-box_highlight"></span>
+             <span class="form-box_bar"></span>
+             <label class="form-box_label" for="password">Пароль</label>
+           </div>
+
+           <a href="./page/view-docs.html" class="signin-button button"> 
+              Войти
+           </a>
+           <input type="submit" style="display: none;">
+         </form>         
+       </div>
+   </main>
+
+   <!-- /  Main   -->
+
+   <script src="./dist/js/main.min.js"></script>
+</body>
+</html>
