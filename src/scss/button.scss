@@ -1,0 +1,51 @@
+.button {
+   display: block;
+   border-radius: 5px;
+   text-align: center;
+   box-shadow: 0 1px 3px $shadow-color2, 0 1px 2px $shadow-color1;
+   @include transition;
+   border: none;
+   cursor: pointer;
+
+   &-table {
+      background-color: lighten($brand-color, 5%);
+      color: mix($light-color, $brand-color, 80%);
+
+      &:hover,
+      &:focus-visible,
+      &:active {
+         color: $light-color;
+         background-color: $brand-color;
+      }
+
+      &:active {
+         color: $light-color;
+         background-color: $brand-color;
+      }
+
+   }
+
+   &-modal {
+      color: lighten($brand-color, 10%);
+      background-color: darken($light-color, 5%);
+      margin: 5px;
+      padding: 8px;
+
+      &:hover,
+      &:focus-visible,
+      &:active {
+         color: $brand-color;
+         background-color: $light-color;
+
+      }
+   }
+
+   &:hover,
+   &:focus-visible {
+      box-shadow: 0 7px 14px $shadow-color1, 0 5px 5px $shadow-color2;
+   }
+
+   &:active {
+      box-shadow: none;
+   }
+}

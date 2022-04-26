@@ -1,0 +1,61 @@
+
+
+// === Header-login ===
+
+.header-login {
+   display: flex;
+   justify-content: center;
+   flex: 1 1 auto;
+   padding: 50px 20px 0;
+
+   &-logo img {
+      flex: 1 1 auto;
+      @media (max-width: $screen-xs-max) {
+         max-width: 250px;
+      }
+
+      @media (min-width: $screen-sm) {
+         max-width: 350px;
+      }
+   }
+}
+
+// === Main-login ===
+
+.signin {
+   margin: 60px 0;
+   display: flex;
+   justify-content: center;
+   padding: 0 20px;
+
+   @media (max-width: $screen-xs-max) {
+      .form-box{
+         &_bar{
+            width: 250px;
+         }
+
+         &_input{
+            width: 250px;
+         }
+      }
+   }
+
+   @media (min-width: $screen-sm) {
+      .form-box{
+         &_bar{
+            width: 300px;
+         }
+
+         &_input{
+            width: 300px;
+         }
+      }
+   }
+
+   &-button {
+      margin: auto;
+      padding: 8px 20px;
+      width: 200px;
+   }
+}
+

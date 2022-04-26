@@ -13,10 +13,10 @@
 
       <header class="header">
          <div class="header-logo">
-            <img src="../img/ENG_logo_Nordavind__svg_.svg" alt="logo" />
+            <img src="../img/RU_logo_Nordavind__svg_.svg" alt="logo" />
          </div>
          <nav class="header-nav_mob header-nav">
-            <button class="header-nav-button" type="button" aria-expanded="false" aria-controls="header-nav-list">
+            <button class="header-nav-button menu-close" type="button" aria-expanded="false" aria-controls="header-nav-list">
                <svg class="header-nav-button-icon" aria-hidden="true">
                   <use class="header-icon_menu" href="../img/sprite.svg#menu"></use>
                   <use class="header-icon_cross" href="../img/sprite.svg#cross"></use>
@@ -36,8 +36,13 @@
                <li class="header-nav-item">
                   <a class="header-nav-link" href="./abmin-worker.html">Сотрудники</a>
                </li>
-               <li class="header-nav-item">
-                  <a href="../index.html" class="header-nav-link">Выход</a>
+               <li class="header-nav-item arrow">
+                  <a class="header-nav-link not-link">Иванов И.И. <span class="header-nav-arrow"></span> </a>
+                  <ul class="header-nav-sub">
+                     <li class="header-nav-sub_item">
+                        <a href="../index.html" class="header-nav-link"><img src="../img/out.svg" alt="">Выход</a>
+                     </li>
+                  </ul>
                </li>
             </ul>
          </nav>
@@ -93,7 +98,7 @@
                </div>
 
                <div class="form-box"> 
-                  <input class="button form-button" type="submit">
+                  <input class="button button-table form-button" type="submit">
                </div>
             </form>
          </div>

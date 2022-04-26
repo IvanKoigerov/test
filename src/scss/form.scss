@@ -1,0 +1,159 @@
+// === Mixin ===
+
+@mixin animation {
+   -webkit-animation: inputHighlighter 0.3s ease;
+   -moz-animation: inputHighlighter 0.3s ease;
+   animation: inputHighlighter 0.3s ease;
+}
+
+
+// === form ===
+
+.form-box {
+   position: relative;
+   
+   &:not(:last-child){
+      margin-bottom: 50px;
+   }
+   
+   &_select{
+      font-size: 16px;
+      padding: 10px;
+      background-color: $light-color;
+      border: none;
+      border-bottom: 1px solid $dark-color;
+      box-shadow: none;
+      border-radius: 0;
+      
+      &:focus {
+         outline: none;
+      }
+
+      option{
+         background-color: $light-color;
+      }
+   }
+
+   &_date{
+      font-size: 17px;
+      padding: 10px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid $dark-color;
+      outline: none;
+      border-radius: 0;
+   }
+
+   &_input {
+      font-size: 16px;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid $dark-color;
+      border-radius: 0;
+
+      &:focus {
+         outline: none;
+      }
+   }
+
+   &_highlight {
+      position: absolute;
+      top: 25%;
+      left: 0;
+      height: 60%;
+      width: 100px;
+      pointer-events: none;
+      opacity: 0.5;
+   }
+
+   &_input:valid ~ &_highlight,
+   &_input:focus ~ &_highlight {
+      @include animation;
+   }
+
+   &_bar {
+      position: relative;
+      display: block;
+
+      &::after,
+      &::before {
+         content: "";
+         height: 2px;
+         width: 0;
+         position: absolute;
+         bottom: 0;
+         background: $brand-color;
+         @include transition;
+      }
+
+      &::after {
+         right: 50%;
+      }
+
+      &::before {
+         left: 50%;
+      }
+   }
+
+   &_input:focus ~ &_bar:before,
+   &_input:focus ~ &_bar:after,
+   &_select:focus ~ &_bar:before,
+   &_select:focus ~ &_bar:after,
+   &_date:focus ~ &_bar:before,
+   &_date:focus ~ &_bar:after {
+      width: 50%;
+   }
+
+   &_label {
+      position: absolute;
+      left: 5px;
+      top: 10px;
+      font-size: 18px;
+      opacity: 0.5;
+      pointer-events: none;
+      @include transition;
+   }
+
+   &_input:valid ~ &_label,
+   &_input:focus ~ &_label,
+   &_select:valid ~ &_label,
+   &_select:focus ~ &_label,
+   &_date ~ &_label {   
+      top: -20px;
+      font-size: 15px;
+      color: $brand-color;
+      opacity: 1;
+   }
+}
+
+
+
+/* === ANIMATIONS === */
+
+@-webkit-keyframes inputHighlighter {
+   from {
+      background: #5264ae;
+   }
+   to {
+      width: 0;
+      background: transparent;
+   }
+}
+@-moz-keyframes inputHighlighter {
+   from {
+      background: #5264ae;
+   }
+   to {
+      width: 0;
+      background: transparent;
+   }
+}
+@keyframes inputHighlighter {
+   from {
+      background: #5264ae;
+   }
+   to {
+      width: 0;
+      background: transparent;
+   }
+}

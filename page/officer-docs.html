@@ -16,7 +16,7 @@
       <img src="../img/ENG_logo_Nordavind__svg_.svg" alt="logo" />
    </div>
    <nav class="header-nav_mob header-nav">
-      <button class="header-nav-button" type="button" aria-expanded="false" aria-controls="header-nav-list">
+      <button class="header-nav-button menu-close" type="button" aria-expanded="false" aria-controls="header-nav-list">
          <svg class="header-nav-button-icon" aria-hidden="true">
             <use class="header-icon_menu" href="../img/sprite.svg#menu"></use>
             <use class="header-icon_cross" href="../img/sprite.svg#cross"></use>
@@ -34,7 +34,15 @@
             <a href="./officer-docs.html" class="header-nav-link active">Согласованные документы</a>
          </li>
          <li class="header-nav-item">
-            <a href="../index.html" class="header-nav-link">Выход</a>
+            <a class="header-nav-link" href="./abmin-worker.html">Сотрудники</a>
+         </li>
+         <li class="header-nav-item arrow">
+            <a class="header-nav-link not-link">Иванов И.И. <span class="header-nav-arrow"></span> </a>
+            <ul class="header-nav-sub">
+               <li class="header-nav-sub_item">
+                  <a href="../index.html" class="header-nav-link"><img src="../img/out.svg" alt="">Выход</a>
+               </li>
+            </ul>
          </li>
       </ul>
    </nav>
@@ -60,50 +68,50 @@
                </thead>
                <tbody class="table-body">
                   <tr>
-                     <td>Иванов Пётр Иваныч</td>
-                     <td>Ежегодный оплачиваемый отпуск</td>
-                     <td>14.03.2022 - 27.03.2022 (14 дней)</td>
-                     <td></td>
-                     <td>Требует согласования</td>
+                     <td data-title="ФИО" >Иванов Пётр Иваныч</td>
+                     <td data-title="Вид заявления">Ежегодный оплачиваемый отпуск</td>
+                     <td data-title="Дата отпуска/отгула">14.03.2022 - 27.03.2022 (14 дней)</td>
+                     <td data-title="Дата отработки">-</td>
+                     <td data-title="Статус заявления">Требует согласования</td>
                      <td>
-                        <button class="button">Скачать pdf</button>
-                        <button class="button">Отклонить</button>
+                        <button class="button button-table"> <img class="img-button" src="../img/pdf.svg" alt="">Скачать</button>
+                        <button class="button button-table"> <img src="../img/cross.svg" alt="" class="img-button">Отклонить</button>
                      </td>
                   </tr>
 
                   <tr>
-                     <td>Иванов Пётр Иваныч</td>
-                     <td>Отгул</td>
-                     <td>14.03.2022 (1 дней)</td>
-                     <td>26.02.2022</td>
-                     <td>Требует согласования</td>
+                     <td data-title="ФИО">Иванов Пётр Иваныч</td>
+                     <td data-title="Вид заявления">Отгул</td>
+                     <td data-title="Дата отпуска/отгула">14.03.2022 (1 дней)</td>
+                     <td data-title="Дата отработки">26.02.2022</td>
+                     <td data-title="Статус заявления">Требует согласования</td>
                      <td>
-                        <button class="button">Скачать pdf</button>
-                        <button class="button">Отклонить</button>
+                        <button class="button button-table"> <img class="img-button" src="../img/pdf.svg" alt="">Скачать</button>
+                        <button class="button button-table"> <img src="../img/cross.svg" alt="" class="img-button">Отклонить</button>
                      </td>
                   </tr>
 
                   <tr>
-                     <td>Иванов Пётр Иваныч</td>
-                     <td>Ежегодный оплачиваемый отпуск</td>
-                     <td>14.03.2022 - 27.03.2022 (14 дней)</td>
-                     <td></td>
-                     <td>Требует согласования</td>
+                     <td data-title="ФИО">Иванов Пётр Иваныч</td>
+                     <td data-title="Вид заявления">Ежегодный оплачиваемый отпуск</td>
+                     <td data-title="Дата отпуска/отгула">14.03.2022 - 27.03.2022 (14 дней)</td>
+                     <td data-title="Дата отработки">-</td>
+                     <td data-title="Статус заявления">Требует согласования</td>
                      <td>
-                        <button class="button">Скачать pdf</button>
-                        <button class="button">Отклонить</button>
+                        <button class="button button-table"> <img class="img-button" src="../img/pdf.svg" alt="">Скачать</button>
+                        <button class="button button-table"> <img src="../img/cross.svg" alt="" class="img-button">Отклонить</button>
                      </td>
                   </tr>
 
                   <tr>
-                     <td>Иванов Пётр Иваныч</td>
-                     <td>Отгул</td>
-                     <td>14.03.2022 (1 дней)</td>
-                     <td>26.02.2022</td>
-                     <td>Требует согласования</td>
+                     <td data-title="ФИО">Иванов Пётр Иваныч</td>
+                     <td data-title="Вид заявления">Отгул</td>
+                     <td data-title="Дата отпуска/отгула">14.03.2022 (1 дней)</td>
+                     <td data-title="Дата отработки">26.02.2022</td>
+                     <td data-title="Статус заявления">Требует согласования</td>
                      <td>
-                        <button class="button">Скачать pdf</button>
-                        <button class="button">Отклонить</button>
+                        <button class="button button-table"> <img class="img-button" src="../img/pdf.svg" alt="">Скачать</button>
+                        <button class="button button-table"> <img src="../img/cross.svg" alt="" class="img-button">Отклонить</button>
                      </td>
                   </tr>
                </tbody>

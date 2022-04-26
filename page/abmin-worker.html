@@ -10,16 +10,15 @@
 </head>
 <body>
 
-   <!-- / Header  -->
 
- <!-- / Header  -->
+ <!--   Header   -->
 
  <header class="header">
    <div class="header-logo">
-      <img src="../img/ENG_logo_Nordavind__svg_.svg" alt="logo" />
+      <img src="../img/RU_logo_Nordavind__svg_.svg" alt="logo" />
    </div>
    <nav class="header-nav_mob header-nav">
-      <button class="header-nav-button" type="button" aria-expanded="false" aria-controls="header-nav-list">
+      <button class="header-nav-button menu-close" type="button" aria-expanded="false" aria-controls="header-nav-list">
          <svg class="header-nav-button-icon" aria-hidden="true">
             <use class="header-icon_menu" href="../img/sprite.svg#menu"></use>
             <use class="header-icon_cross" href="../img/sprite.svg#cross"></use>
@@ -28,22 +27,30 @@
 
       <ul class="header-nav-list list_close_anim" id="header-nav-list">
          <li class="header-nav-item">
+            <a class="header-nav-link" href="./view-docs.html"> Мои заявления </a>
+         </li>
+         <li class="header-nav-item">
+            <a class="header-nav-link active">Создать заявление</a>
+         </li>
+         <li class="header-nav-item">
+            <a href="./officer-docs.html" class="header-nav-link">Согласованные документы</a>
+         </li>
+         <li class="header-nav-item">
             <a class="header-nav-link active">Сотрудники</a>
          </li>
-         <li class="header-nav-item">
-            <a href="./write-docs.html" class="header-nav-link">Документы</a>
-         </li>
-         <li class="header-nav-item">
-            <a href="../index.html" class="header-nav-link">Выход</a>
+         <li class="header-nav-item arrow">
+            <a class="header-nav-link not-link">Иванов И.И. <span class="header-nav-arrow"></span> </a>
+            <ul class="header-nav-sub">
+               <li class="header-nav-sub_item">
+                  <a href="../index.html" class="header-nav-link"><img src="../img/out.svg" alt="">Выход</a>
+               </li>
+            </ul>
          </li>
       </ul>
    </nav>
 </header>
 
 <!-- / Header  -->
-
-
-   <!-- / Header  -->
 
    
    <!--   Main   -->
@@ -58,63 +65,234 @@
                   <th>Статус</th>
                   <th>ФИО руководителя</th>
                   <th>
-                     <button class="button">
-                        Добавить                        
-                     </button>
+                     <a href="#modal-add" class="modal-open">
+                        <img class="icon-button" src="../img/add_circle.svg" alt="">                    
+                     </a>
                   </th>
                </tr>
             </thead>
             <tbody class="table-body">
                <tr>
-                  <td>Иванов Пётр Иваныч</td>
-                  <td>Специалиат по кадрам</td>
-                  <td>Кадровик</td>
-                  <td>Капустина Мария Викторовна</td>
+                  <td data-title="ФИО">Иванов Пётр Иваныч</td>
+                  <td data-title="Должность">Специалиат по кадрам</td>
+                  <td data-title="Статус">Кадровик</td>
+                  <td data-title="ФИО руководителя">Капустина Мария Викторовна</td>
                   <td>
-                     <button class="button">
-                        Редактировать                        
-                     </button>
+                     <a href="#modal-change" class="modal-open">
+                        <img class="icon-button" src="../img/edit.svg" alt="">             
+                     </a>
                   </td>
                </tr>
 
                <tr>
-                  <td>Капустина Мария Викторовна</td>
-                  <td>Генеральный директор</td>
-                  <td>Руководитель</td>
-                  <td>-</td>
+                  <td data-title="ФИО">Капустина Мария Викторовна</td>
+                  <td data-title="Должность">Генеральный директор</td>
+                  <td data-title="Статус">Руководитель</td>
+                  <td data-title="ФИО руководителя">-</td>
                   <td>
-                     <button class="button">
-                        Редактировать                        
-                     </button>
+                     <a href="#modal-change" class="modal-open">
+                        <img class="icon-button" src="../img/edit.svg" alt="">                         
+                     </a>
                   </td>
                </tr>
 
                <tr>
-                  <td>Иванов Пётр Иваныч</td>
-                  <td>Разработчик</td>
-                  <td>Работник</td>
-                  <td>Капустина Мария Викторовна</td>
+                  <td data-title="ФИО">Иванов Пётр Иваныч</td>
+                  <td data-title="Должность">Разработчик</td>
+                  <td data-title="Статус">Работник</td>
+                  <td data-title="ФИО руководителя">Капустина Мария Викторовна</td>
                   <td>
-                     <button class="button">
-                        Редактировать                        
-                     </button>
+                     <a href="#modal-change" class="modal-open">
+                        <img class="icon-button" src="../img/edit.svg" alt="">                   
+                     </a>
                   </td>
                </tr>
 
                <tr>
-                  <td>Капустина Мария Викторовна</td>
-                  <td>Генеральный директор</td>
-                  <td>Руководитель</td>
-                  <td>-</td>
+                  <td data-title="ФИО">Капустина Мария Викторовна</td>
+                  <td data-title="Должность">Генеральный директор</td>
+                  <td data-title="Статус">Руководитель</td>
+                  <td data-title="ФИО руководителя">-</td>
                   <td>
-                     <button class="button">
-                        Редактировать                        
-                     </button>
+                     <a href="#modal-change" class="modal-open">
+                        <img class="icon-button" src="../img/edit.svg" alt="">          
+                     </a>
+                  </td>
+               </tr>
+
+               <tr>
+                  <td data-title="ФИО">Иванов Пётр Иваныч</td>
+                  <td data-title="Должность">Специалиат по кадрам</td>
+                  <td data-title="Статус">Кадровик</td>
+                  <td data-title="ФИО руководителя">Капустина Мария Викторовна</td>
+                  <td>
+                     <a href="#modal-change" class="modal-open">
+                        <img class="icon-button" src="../img/edit.svg" alt="">             
+                     </a>
+                  </td>
+               </tr>
+
+               <tr>
+                  <td data-title="ФИО">Капустина Мария Викторовна</td>
+                  <td data-title="Должность">Генеральный директор</td>
+                  <td data-title="Статус">Руководитель</td>
+                  <td data-title="ФИО руководителя">-</td>
+                  <td>
+                     <a href="#modal-change" class="modal-open">
+                        <img class="icon-button" src="../img/edit.svg" alt="">                         
+                     </a>
+                  </td>
+               </tr>
+
+               <tr>
+                  <td data-title="ФИО">Иванов Пётр Иваныч</td>
+                  <td data-title="Должность">Разработчик</td>
+                  <td data-title="Статус">Работник</td>
+                  <td data-title="ФИО руководителя">Капустина Мария Викторовна</td>
+                  <td>
+                     <a href="#modal-change" class="modal-open">
+                        <img class="icon-button" src="../img/edit.svg" alt="">                   
+                     </a>
+                  </td>
+               </tr>
+
+               <tr>
+                  <td data-title="ФИО">Капустина Мария Викторовна</td>
+                  <td data-title="Должность">Генеральный директор</td>
+                  <td data-title="Статус">Руководитель</td>
+                  <td data-title="ФИО руководителя">-</td>
+                  <td>
+                     <a href="#modal-change" class="modal-open">
+                        <img class="icon-button" src="../img/edit.svg" alt="">          
+                     </a>
                   </td>
                </tr>
             </tbody>
          </table>
       </div>
+
+      <div class="modal" id="modal-add">
+         <form action="" class="form modal__dialog">
+            
+            <div class="modal__dialog-header">
+               <h2 class="modal-title">Добавить сотрудника</h2>
+               <button type="reset" class="modal-close modal__dialog-header-close">
+                  <svg>
+                     <use class="close-icon" href="../img/sprite.svg#cross"></use>
+                  </svg>
+               </button>
+            </div>
+            <div class="modal__dialog-body">
+               <div class="form-box"> 
+                  <input class="form-box_input" type="text" id="fio" required>
+                  <span class="form-box_highlight"></span>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="fio">ФИО</label>
+               </div>
+
+               <div class="form-box"> 
+                  <select name="sltype" class="form-box_select" id="select">
+                     <option value="1"> 1 </option>
+                     <option value="2"> 2 </option>
+                     <option value="3"> 3 </option>
+                  </select>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="select">Должность</label>
+               </div>
+            
+               <div class="form-box"> 
+                  <select name="sltype" class="form-box_select" id="select">
+                     <option value="1"> Пользователь </option>
+                     <option value="2"> Кадровик </option>
+                     <option value="3"> Руководитель </option>
+                  </select>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="select">Роль</label>
+               </div>
+            
+               <div class="form-box"> 
+                  <input class="form-box_input" type="text" id="place" required>
+                  <span class="form-box_highlight"></span>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="place">ФИО руководителя</label>
+               </div>
+            </div>
+
+            <div class="modal__dialog-footer">
+               <button type="reset" class="modal-close button button-table">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                     <path d="M7 24L25 8 M25 24L7 8" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+                  </svg> Закрыть
+               </button>
+
+               <button type="submit" class="modal-close button button-table ">
+                  <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg> Добавить
+               </button>
+            </div>
+         </form>
+      </div>
+
+      <div class="modal" id="modal-change">
+         <form action="" class="form modal__dialog">
+            <div class="modal__dialog-header">
+               <h2 class="modal-title">Добавить сотрудника</h2>
+               <button type="reset" class="modal-close modal__dialog-header-close">
+                  <svg aria-hidden="true">
+                     <use class="close-icon" href="../img/sprite.svg#cross"></use>
+                  </svg>
+               </button>
+            </div>
+
+            <div class="modal__dialog-body">
+               <div class="form-box"> 
+                  <input class="form-box_input" type="text" id="fio" required>
+                  <span class="form-box_highlight"></span>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="fio">ФИО</label>
+               </div>
+
+               <div class="form-box"> 
+                  <select name="sltype" class="form-box_select" id="select">
+                     <option value="1"> 1 </option>
+                     <option value="2"> 2 </option>
+                     <option value="3"> 3 </option>
+                  </select>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="select">Должность</label>
+               </div>
+            
+               <div class="form-box"> 
+                  <select name="sltype" class="form-box_select" id="select">
+                     <option value="1"> Пользователь </option>
+                     <option value="2"> Кадровик </option>
+                     <option value="3"> Руководитель </option>
+                  </select>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="select">Роль</label>
+               </div>
+            
+               <div class="form-box"> 
+                  <input class="form-box_input" type="text" id="place" required>
+                  <span class="form-box_highlight"></span>
+                  <span class="form-box_bar"></span>
+                  <label class="form-box_label" for="place">ФИО руководителя</label>
+               </div>
+            </div>
+
+            <div class="modal__dialog-footer">
+               <button type="reset" class="modal-close button button-table">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                     <path d="M7 24L25 8 M25 24L7 8" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+                  </svg> Закрыть
+               </button>
+
+               <button type="submit" class="modal-close button button-table">
+                  <svg height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"/></svg> Изменить
+               </button>
+            </div>
+         </form>
+      </div>
+
    </main>
 
    <!-- /  Main   -->
